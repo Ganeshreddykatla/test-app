@@ -1,0 +1,105 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d6e6ff;
+  border-radius: 8px;
+  opacity: 0.1;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #125ce7;
+  border-radius: 8px;
+  height: 5px;
+  width: 5px;
+}
+
+.container {
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background: #09a2b3;
+  padding: 15px 14px;
+  text-align: left;
+  color: #fff;
+}
+
+table th:nth-child(1) {
+  border-radius: 10px 0 0 0;
+}
+
+table th:nth-last-child(1) {
+  border-radius: 0 10px 0 0;
+}
+
+table td {
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #37a3b21f;
+  font-size: 14px;
+  background: #fff;
+}
+
+table tr:nth-child(even) td {
+  background: #37a3b21f;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 600px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .container {
+    max-width: 1162px;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1232px;
+    padding: 0 16px;
+  }
+}
